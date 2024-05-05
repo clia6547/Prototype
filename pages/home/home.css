@@ -7,7 +7,7 @@ body, html {
 /* Header Styles */
 .navbar {
     background-color: #ffe100;
-    padding: 10px 20px;
+    padding: 1vw 2vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,14 +16,14 @@ body, html {
 
 .navbar img {
     width: 100%;
-    max-width: 100px;
+    max-width: 10vw;
     height: auto;
 }
 
 nav a {
     text-decoration: none;
     color: black;
-    margin: 0 10px;
+    margin: 0 1vw;
     font-size: 1.1vw; 
 }
 
@@ -115,7 +115,7 @@ button:hover {
 footer {
     background-color: #000000;
     color: white;
-    padding: 20px 0;
+    padding: 2vw 0;
     font-size: 1.2vw;
 }
 
@@ -126,11 +126,11 @@ footer {
 }
 
 .social-links {
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
 }
 
 .social-links a {
-    margin: 0 10px;
+    margin: 0 1vw;
 }
 
 .social-links img {
@@ -152,16 +152,16 @@ footer {
 }
 
 .legal-links {
-    margin-top: 10px;
+    margin-top: 1vw;
     font-size: 1vw; /* Even smaller for legal links */
 }
 
 .copyright {
-    margin-top: 10px;
+    margin-top: 1vw;
     font-size: 1vw; /* Same as legal links */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 60vw) {
     .footer-content {
         width: 95%;
     }
