@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Driver Share Detail</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+        <a href="/pages/home/home.html"><img src="images/logo.png" alt="Your Logo"></a>
+        <nav>
+            <a href="/pages/login/choose.html">Login</a>
+            <a href="/pages/account/account.html">Account</a>
+            <a href="/pages/ride/management.html">Ride</a>
+            <a href="/pages/support/support.html">Support</a>
+        </nav>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="form-container">
+      <h1>Driver Share Detail</h1>
+      <input type="text" placeholder="Driver Name" id="driverName">
+      <input type="date" id="tripDate">
+      <label for="tripTime">Time (12-hour format):</label>
+      <input type="time" id="tripTime" value="00:00">
+      <textarea placeholder="Trip Description" id="tripDescription" rows="4"></textarea>
+      <button type="button" onclick="submitDriverDetails()">Submit</button>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-content">
+        <div class="social-links">
+            <a href="#" class="social-icon"><img src="fb.png" alt="Facebook.com"></a>
+            <a href="#" class="social-icon"><img src="ig.png" alt="Instagram.com"></a>
+            <a href="#" the="social-icon"><img src="x.png" alt="X.com"></a>
+        </div>
+        <div class="footer-links">
+            <a href="#">Info</a> ·
+            <a href="#">Support</a> ·
+            <a href="#">Marketing</a>
+        </div>
+        <div class="legal-links">
+            <a href="#">Terms of Use</a> ·
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+            © 2024 NeighbourLink
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
