@@ -35,7 +35,7 @@ main {
   justify-content: center;
   padding: 2vw;
   font-size: 1.2vw;
-  flex: 1; /* Ensures main content stretches to fill available space */
+  flex: 1;
 }
 
 form {
