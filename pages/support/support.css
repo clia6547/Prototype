@@ -1,0 +1,246 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.2vw;  
+}
+
+.navbar {
+    background-color: #ffe100;
+    padding: 1vw 2vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2vw;
+}
+
+.navbar img {
+    width: 100%;
+    max-width: 10vw;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1vw;
+    font-size: 1.1vw; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.2vw;
+}
+
+.navbar {
+    background-color: #ffe100;
+    padding: 1vw 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img {
+    width: 100%;
+    max-width: 10vw;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 1vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+    align-items: center;
+}
+
+.query-box {
+    width: 100%;
+    max-width: 50vw; /* Adjust the width in viewport width units */
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2vw;
+}
+
+.query-box input[type="text"] {
+    width: 70%;
+    height: 50%;
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+
+.query-box button {
+    background-color: #000000; /* Green background */
+    color: white; /* White text */
+    padding: 1vw 2vw; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block;
+    font-size: 1vw;
+    margin: 0vw 0.2vw;
+    cursor: pointer; /* Cursor changes to a hand when you hover over the button */
+    border-radius: 0.4vw; /* Rounded corners */
+    margin-right: 5vw; /* Move the button to the right */
+}
+
+
+.faq-section {
+    width: 100%;
+    max-width: 50vw; /* Ensures the FAQ section aligns with the query box above */
+    margin-top: 2.4vw; /* Adds space between the query box and FAQ section */
+}
+
+.faq-section h2 {
+    margin-bottom: 5vw; /* Add this line */
+}
+
+.faq-topic h3 {
+    font-size: 1.5vw;
+    color: #333;
+}
+
+.faq-topic p {
+    font-size: 1vw;
+    color: #666;
+}
+
+.chat {
+    padding: 1.2vw 2.4vw;
+    font-size: 1.2vw;
+    margin: 2.4vw auto; /* Centers the button and adds vertical spacing */
+    display: block; /* Makes the button block level for better control over width */
+    background-color: #ffe100; /* Matches the navbar color */
+    border: none; /* Removes default border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    border-radius: 2vw;
+    font-weight: bold; /* Adds bold font */
+}
+
+.chat:hover  {
+    background-color: #e6d900; /* Slightly darker on hover for a feedback effect */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 2vw 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-bottom: 2vw;
+}
+
+.social-links img {
+    width: 1.5vw;
+    height: 1.5vw;
+    vertical-align: middle;
+}
+
+.social-links a {
+    margin: 0 1vw;
+}
+
+.footer-links a, .legal-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+
+.footer-links a:hover, .legal-links a:hover {
+    text-decoration: underline;
+}
+
+.legal-links {
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+
+.copyright {
+    margin-top: 1vw;
+    font-size: 1vw;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 2vw 0;
+    font-size: 1.2vw;  /* Adjust the base font size using viewport width */
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 2vw;
+}
+
+.social-links a {
+    margin: 0 1vw;
+}
+
+.social-links img {
+    width: 1.5vw;
+    height: 1.5vw;  /* Scale icons with the viewport width */
+    vertical-align: middle;
+}
+
+.footer-links a,
+.legal-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1vw;  /* Slightly smaller font size for links */
+}
+
+.footer-links a:hover,
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+.legal-links {
+    margin-top: 1vw;
+    font-size: 1vw;  /* Even smaller for legal links */
+}
+
+.copyright {
+    margin-top: 1vw;
+    font-size: 1vw;  /* Same as legal links */
+}
+
+@media (max-width: 60vw) {
+    .footer-content {
+        width: 95%;
+    }
+    footer {
+        font-size: 3vw;  /* Increase base font size for smaller screens */
+    }
+    .social-links img {
+        width: 4vw;
+        height: 4vw;  /* Increase icon size for better visibility on small screens */
+    }
+}
