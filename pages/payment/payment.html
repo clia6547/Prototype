@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        /* Set the map container's height */
+        #map {
+            height: 500px; /* Adjust the height as needed */
+            width: 35%; /* Adjust the width as needed */
+            margin: 50px auto; /* Center the map horizontally */
+        }
+
+        /* Add space above and below the input and button */
+        .query-box {
+            text-align: center; /* Center the query box */
+            margin: 20px auto; /* Add space above and below the query box */
+        }
+
+        /* Style the input box */
+        #query-input {
+            width: 20%; /* Adjust the width of the input box */
+            padding: 10px; /* Add padding for better appearance */
+            font-size: 16px; /* Adjust font size */
+        }
+
+        /* Style the container for image options */
+        .image-options {
+            text-align: center; /* Center the image options */
+            margin: 20px auto; /* Add space above and below the image options */
+        }
+
+        /* Style the individual image option */
+        .image-option {
+            width: 10%; /* Adjust the width of each image option */
+            padding: 10px; /* Add padding */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            display: inline-block; /* Display images side by side */
+            margin: 0 10px; /* Add space between images */
+        }
+
+        /* Style the image */
+        .image-option img {
+            width: 100%; /* Set image width to 100% of its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../../pages/home/home.html"><img src="../../images/logo.png" alt="Your Logo"></a>
+            <nav>
+                <a href="#">Log Out</a>
+                <a href="../../pages/account/account.html">Account</a>
+                <a href="../../pages/ride/management.html">Ride</a>
+                <a href="../../pages/support/support.html">Support</a>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h3>Order Summary:</h3>
+            <img src="../../images/payment1.png" alt="map" style="width:500px;height:300px;">
+            <div class="order-summary">
+                <p>From: <span id="pickup-location">Sydney CBA</span></p>
+                <p>To: <span id="destination">Burwood station</span></p>
+            </div>
+    
+            <h3>Fare Details:</h3>
+            <div class="fare-details">
+                <p>Base Fare: $<span id="base-fare">15.00</span></p>
+                <p>Mileage: $<span id="mileage">3.00</span></p>
+                <p>Waiting Time: $<span id="waiting-time">2.00</span></p>
+                <p>Total: $<span id="total">20.00</span></p>
+            </div>
+    
+            <h3>Coupon or Discount Code:</h3>
+            <div class="coupon">
+                <input type="text" id="coupon-code" placeholder="Enter Code">
+                <button id="apply-btn">Apply</button>
+            </div>
+    
+            <div class="security-info">
+                <p>Your payment is secured with SSL encryption.</p>
+                <p>Please select a payment option:</p>
+                <button id="Applepay">Apple pay</button>
+                <button id="paypal">PayPal</button>
+                <button id="credit-card">Credit Card</button>
+                <button id="cash">Cash</button><br>
+                <br>
+                <button id="pay-now" onclick="location.href='../rating/passengerform.html'">Pay Now</button>
+            </div>
+        </div>
+        
+    </main>
+   
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="../../images/fb.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="../../images/ig.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="../../images/x.png" alt="X"></a>
+            </div>
+            <div class="footer-links">
+                <a href="../../pages/aboutus/aboutus.html">About Us</a> ·
+                <a href="../../pages/support/support.html">Support</a> ·
+                <a href="../../images/Site-Map.png">Site-Map</a>
+            </div>
+            <div class="legal-links">
+                <a href="#">Terms of Use</a> ·
+                <a href="../../pages/privacypolicy/privacypolicy.html">Privacy Policy</a>
+            </div>
+            <div class="copyright">
+                © 2024 NeighbourLink
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

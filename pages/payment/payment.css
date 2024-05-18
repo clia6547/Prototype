@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+     
+}
+/* Header Styles */
+.navbar {
+    background-color: #ffe100;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2vw;
+}
+
+.navbar img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    font-size: 1.1vw; 
+}
+
+
+/* Main Content Styles */
+.image-container img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.text-container {
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.text-container h1 {
+    font-size: 3vw;
+    color: #000000;
+}
+
+
+/* Footer Styles */
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.2vw;
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 1.5vw;
+    height: 1.5vw; /* Scale icons with the viewport width */
+    vertical-align: middle;
+}
+
+.footer-links a,
+.legal-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1vw; /* Slightly smaller font size for links */
+}
+
+.footer-links a:hover,
+.legal-links a:hover {
+    text-decoration: underline;
+}
+
+.legal-links {
+    margin-top: 10px;
+    font-size: 1vw; /* Even smaller for legal links */
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 1vw; /* Same as legal links */
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        width: 95%;
+    }
+    footer {
+        font-size: 3vw; /* Increase base font size for smaller screens */
+    }
+    .social-links img {
+        width: 4vw;
+        height: 4vw; /* Increase icon size for better visibility on small screens */
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 110vh; 
+}
+
+#pay-now {
+    font-size: 20px;
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 8px; 
+    background-color: green; 
+    color: white; 
+    cursor: pointer; 
+}
+
+#pay-now:hover {
+    background-color: darkgreen; 
+}
+
