@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Rider Share Detail</title>
-  <link rel="stylesheet" href="pages/ride/detail_style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header>
@@ -20,12 +20,14 @@
   <div class="main-content">
     <div class="form-container">
       <h1>Rider Share Detail</h1>
-      <input type="text" placeholder="Rider Name" id="riderName">
-      <input type="date" id="tripDate">
-      <label for="tripTime">Time (12-hour format):</label>
-      <input type="time" id="tripTime" value="00:00">
-      <textarea placeholder="Trip Description" id="tripDescription" rows="4"></textarea>
-      <button type="button" onclick="submitRiderDetails()">Submit</button>
+      <form action="/pages/ride/management.html">
+        <input type="text" placeholder="Rider Name" id="riderName" name="riderName" required>
+        <input type="date" id="tripDate" name="tripDate" required>
+        <label for="tripTime">Time (12-hour format):</label>
+        <input type="time" id="tripTime" name="tripTime" value="00:00" required>
+        <textarea placeholder="Trip Description" id="tripDescription" name="tripDescription" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </div>
   <footer>
