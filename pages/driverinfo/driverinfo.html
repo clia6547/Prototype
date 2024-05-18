@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Info</title>
+    <link rel="stylesheet" href="driverinfo.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        /* Set the map container's height */
+        #map {
+            height: 500px; /* Adjust the height as needed */
+            width: 35%; /* Adjust the width as needed */
+           /* Center the map horizontally */
+        
+        }
+
+        /* Add space above and below the input and button */
+        .query-box {
+            text-align: center; /* Center the query box */
+            margin: 20px auto; /* Add space above and below the query box */
+        }
+
+        /* Style the input box */
+        #query-input {
+            width: 20%; /* Adjust the width of the input box */
+            padding: 10px; /* Add padding for better appearance */
+            font-size: 16px; /* Adjust font size */
+        }
+
+        /* Style the container for image options */
+        .image-options {
+            text-align: center; /* Center the image options */
+            margin: 20px auto; /* Add space above and below the image options */
+        }
+
+        /* Style the individual image option */
+        .image-option {
+            width: 10%; /* Adjust the width of each image option */
+            padding: 10px; /* Add padding */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            display: inline-block; /* Display images side by side */
+            margin: 0 10px; /* Add space between images */
+        }
+
+        /* Style the image */
+        .image-option img {
+            width: 100%; /* Set image width to 100% of its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="../home/home.html"><img src="../../images/logo.png" alt="Your Logo"></a>
+            <nav>
+                <a href="../../pages/home/home.html">Log Out</a>
+                <a href="../account/account.html">Account</a>
+                <a href="#">Ride</a>
+                <a href="../support/support.html">Support</a>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <br>
+        <img src="../../images/payment1.png" alt="map" style="width:500px;height:300px;"onclick="location.href='../rating/driverform.html'">
+        <div class="container">
+            <h2>Estimated Time of Arrival</h2>
+            <p>The estimated time of arrival for your trip is <strong>0 hour and 15 minutes</strong>.</p><br>
+            <h2>Ride Request Information</h2>
+            <p><strong>Departure Location:</strong> <span id="departureLocation">483 George St, Sydney NSW 2000</span></p>
+            <p><strong>Destination:</strong> <span id="destination">2 Conder St, Burwood NSW 2134</span></p>
+            <p><strong>Available Seats:</strong> <span id="availableSeats">3</span></p>
+            <p><strong>Vehicle Type:</strong> <span id="vehicleType">Sedan</span></p>
+            <p><strong>Special Features:</strong> <span id="specialFeatures">Wheelchair Accessible, Pet Friendly</span></p>
+            <p><strong>Petrol Contribution:</strong> <span id="petrolContribution">$10 per kilometer</span></p>
+            <br>
+        </div>
+        <!-- <p style="text-align: center;">Please select your vehicle type</p> -->
+         <!-- Image options container -->
+        <!-- <div class="image-options">
+            <div class="image-option">
+                <button onclick="location.href='../info/info.html'"><img src="../../images/car1.png" alt="Car 1"></button>
+                <p>Electric Car</p>
+            </div>
+            <div class="image-option">
+                <button onclick="location.href='../info/info.html'"><img src="../../images/car2.png" alt="Car 2"></button>
+                <p>SUV</p>
+            </div>
+            <div class="image-option">
+                <button onclick="location.href='../info/info.html'"><img src="../../images/car3.png" alt="Car 3"></button>
+                <p>Sedan</p>
+            </div>
+            <div class="image-option">
+                <button onclick="location.href='../info/info.html'"><img src="../../images/car4.png" alt="Car 4"></button>
+                <p>MPV</p>
+            </div>
+        </div> -->
+
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon"><img src="../../images/fb.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="../../images/ig.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="../../images/x.png" alt="X"></a>
+            </div>
+            <div class="footer-links">
+                <a href="../../pages/aboutus/aboutus.html">About Us</a> ·
+                <a href="../../pages/support/support.html">Support</a> ·
+                <a href="../../images/Site-Map.png">Site-Map</a>
+            </div>
+            <div class="legal-links">
+                <a href="#">Terms of Use</a> ·
+                <a href="../../pages/privacypolicy/privacypolicy.html">Privacy Policy</a>
+            </div>
+            <div class="copyright">
+                © 2024 NeighbourLink
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
