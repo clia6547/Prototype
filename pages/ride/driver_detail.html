@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Driver Share Detail</title>
-  <link rel="stylesheet" href="pages/ride/detail_style.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
   <header>
@@ -20,12 +20,14 @@
   <div class="main-content">
     <div class="form-container">
       <h1>Driver Share Detail</h1>
-      <input type="text" placeholder="Driver Name" id="driverName">
-      <input type="date" id="tripDate">
-      <label for="tripTime">Time (12-hour format):</label>
-      <input type="time" id="tripTime" value="00:00">
-      <textarea placeholder="Trip Description" id="tripDescription" rows="4"></textarea>
-      <button type="button" onclick="submitDriverDetails()">Submit</button>
+      <form action="/pages/ride/management.html">
+        <input type="text" placeholder="Driver Name" id="driverName" name="driverName" required>
+        <input type="date" id="tripDate" name="tripDate" required>
+        <label for="tripTime">Time (12-hour format):</label>
+        <input type="time" id="tripTime" name="tripTime" value="00:00" required>
+        <textarea placeholder="Trip Description" id="tripDescription" name="tripDescription" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </div>
   <footer>
@@ -33,7 +35,7 @@
         <div class="social-links">
             <a href="#" class="social-icon"><img src="images/fb.png" alt="Facebook.com"></a>
             <a href="#" class="social-icon"><img src="images/ig.png" alt="Instagram.com"></a>
-            <a href="#" the="social-icon"><img src="images/x.png" alt="X.com"></a>
+            <a href="#" class="social-icon"><img src="images/x.png" alt="X.com"></a>
         </div>
         <div class="footer-links">
             <a href="#">Info</a> ·
