@@ -111,10 +111,14 @@ footer {
 main {
     display: flex;
     justify-content: center; 
-    height: 120vh; 
+    height: 110vh; 
     margin-top: 10px;
 }
 
 p {
     font-size: 15px; 
+}
+
+#contact-info {
+    width: 300px; 
 }
