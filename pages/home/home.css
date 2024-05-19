@@ -30,8 +30,8 @@ nav a {
 
 /* Main Content Styles */
 .image-container img {
-    width: 100%; /* Make the image take the full width of its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
 .text-container {
@@ -53,7 +53,7 @@ nav a {
 .buttons-container button {
     width: 23vw;  
     height: 30vw;
-    position: relative; /* Needed for absolute positioning of children */
+    position: relative; 
     border-radius: 2VW;
     margin: 0 3VW; 
 }
@@ -78,13 +78,13 @@ nav a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the text */
+    transform: translate(-50%, -50%); 
 }
 
 button {
     background-color: #CD212A; 
     border: none;
-    padding: 15% 5%; /* Increase horizontal padding */
+    padding: 15% 5%; 
     font-size: 1.2vw;
     cursor: pointer;
     color: #FFFFFF;
@@ -95,12 +95,12 @@ button:hover {
     background-color: #800a0f; 
 }
 
-/* Hide the text by default */
+
 .buttons-container button span {
     display: none;
 }
 
-/* Hide the image and show the text on hover */
+
 .buttons-container button:hover img {
     display: none;
 }
@@ -136,7 +136,7 @@ footer {
 
 .social-links img {
     width: 1.5vw;
-    height: 1.5vw; /* Scale icons with the viewport width */
+    height: 1.5vw; 
     vertical-align: middle;
 }
 
@@ -144,7 +144,7 @@ footer {
 .legal-links a {
     color: white;
     text-decoration: none;
-    font-size: 1.1vw; /* Slightly smaller font size for links */
+    font-size: 1.1vw; 
 }
 
 .footer-links a:hover,
@@ -154,12 +154,12 @@ footer {
 
 .legal-links {
     margin-top: 1vw;
-    font-size: 1vw; /* Even smaller for legal links */
+    font-size: 1vw; 
 }
 
 .copyright {
     margin-top: 1vw;
-    font-size: 1vw; /* Same as legal links */
+    font-size: 1vw; 
 }
 
 @media (max-width: 60vw) {
@@ -167,11 +167,11 @@ footer {
         width: 95%;
     }
     footer {
-        font-size: 3vw; /* Increase base font size for smaller screens */
+        font-size: 3vw; 
     }
     .social-links img {
         width: 4vw;
-        height: 4vw; /* Increase icon size for better visibility on small screens */
+        height: 4vw; 
     }
 }
 
